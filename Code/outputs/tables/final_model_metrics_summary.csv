@@ -1,0 +1,5 @@
+model,roc_auc,log_loss,brier_score
+Baseline,0.7857,0.2909,0.0838
+Skill-aware,0.7879,0.2899,0.0836
+Form-aware,0.7876,0.2901,0.0837
+Combined,0.7887,0.2898,0.0836

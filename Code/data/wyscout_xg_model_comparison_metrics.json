@@ -1,0 +1,58 @@
+[
+  {
+    "model_name": "combined",
+    "n_shots": 8881,
+    "goal_rate": 0.11124873325076005,
+    "roc_auc": 0.78865061852069,
+    "average_precision": 0.37750140879846056,
+    "log_loss": 0.2897530223842703,
+    "brier_score": 0.08363763281309099,
+    "mean_pred_xg": 0.11424997940880026,
+    "auc_gain": 0.0029500079761137776,
+    "ap_gain": 0.002762256854714651,
+    "log_loss_reduction": 0.001140382630067438,
+    "brier_reduction": 0.00020122928275333185
+  },
+  {
+    "model_name": "skill_aware",
+    "n_shots": 8881,
+    "goal_rate": 0.11124873325076005,
+    "roc_auc": 0.787940269936309,
+    "average_precision": 0.3772247110449501,
+    "log_loss": 0.2899432494474291,
+    "brier_score": 0.08363794572797864,
+    "mean_pred_xg": 0.11423022617158496,
+    "auc_gain": 0.0022396593917327623,
+    "ap_gain": 0.0024855591012041822,
+    "log_loss_reduction": 0.0009501555669086392,
+    "brier_reduction": 0.0002009163678656778
+  },
+  {
+    "model_name": "form_aware",
+    "n_shots": 8881,
+    "goal_rate": 0.11124873325076005,
+    "roc_auc": 0.7876386010050416,
+    "average_precision": 0.3780003972481701,
+    "log_loss": 0.29005710268026963,
+    "brier_score": 0.0836680338010328,
+    "mean_pred_xg": 0.11417116197493746,
+    "auc_gain": 0.0019379904604653886,
+    "ap_gain": 0.0032612453044241763,
+    "log_loss_reduction": 0.0008363023340681175,
+    "brier_reduction": 0.0001708282948115203
+  },
+  {
+    "model_name": "baseline",
+    "n_shots": 8881,
+    "goal_rate": 0.11124873325076005,
+    "roc_auc": 0.7857006105445762,
+    "average_precision": 0.3747391519437459,
+    "log_loss": 0.29089340501433775,
+    "brier_score": 0.08383886209584432,
+    "mean_pred_xg": 0.11405230725938267,
+    "auc_gain": 0.0,
+    "ap_gain": 0.0,
+    "log_loss_reduction": 0.0,
+    "brier_reduction": 0.0
+  }
+]
