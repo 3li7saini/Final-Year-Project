@@ -1,0 +1,20 @@
+# Raw Wyscout JSON data (large, licensed)
+data/wyscout-data/
+
+# Trained model artifacts (regeneratable from notebooks)
+*.joblib
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Backup parquets/CSVs created during refactor verification
+*_BACKUP.*
+
+# OS
+.DS_Store
+Thumbs.db
