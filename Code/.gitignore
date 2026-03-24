@@ -1,5 +1,8 @@
 # Raw Wyscout JSON data (large, licensed)
-data/wyscout-data/
+data/raw/
+
+# Interim pipeline artifacts (regeneratable from notebooks)
+data/interim/
 
 # Trained model artifacts (regeneratable from notebooks)
 *.joblib
@@ -18,6 +21,9 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Virtual environment
+.venv/
 
 #claude skills
 .claude/

@@ -2,13 +2,18 @@ from pathlib import Path
 
 # ── Paths ──────────────────────────────────────────────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR     = PROJECT_ROOT / "data"
-MODELS_DIR   = PROJECT_ROOT / "models"
-OUTPUTS_DIR  = PROJECT_ROOT / "outputs"
-EVENT_DIR    = DATA_DIR / "wyscout-data" / "events"
-MATCH_DIR    = DATA_DIR / "wyscout-data" / "matches"
-PLAYER_FILE  = DATA_DIR / "wyscout-data" / "players.json"
-TEAM_FILE    = DATA_DIR / "wyscout-data" / "teams.json"
+DATA_DIR      = PROJECT_ROOT / "data"
+INTERIM_DIR   = DATA_DIR / "interim"
+PROCESSED_DIR = DATA_DIR / "processed"
+MODELS_DIR    = PROJECT_ROOT / "models" / "xg"
+OUTPUTS_DIR   = PROJECT_ROOT / "outputs"
+FIGURES_DIR   = OUTPUTS_DIR / "figures"
+TABLES_DIR    = OUTPUTS_DIR / "tables"
+RAW_DIR      = DATA_DIR / "raw" / "wyscout"
+EVENT_DIR    = RAW_DIR / "events"
+MATCH_DIR    = RAW_DIR / "matches"
+PLAYER_FILE  = RAW_DIR / "players.json"
+TEAM_FILE    = RAW_DIR / "teams.json"
 
 # ── League constants ───────────────────────────────────────────────────────
 # ALL_LEAGUES drives extraction iteration order (alphabetical — matches current NB01
