@@ -6,3 +6,5 @@ matplotlib
 pyarrow
 ipykernel
 jupyterlab
+streamlit~=1.45
+plotly~=6.1
