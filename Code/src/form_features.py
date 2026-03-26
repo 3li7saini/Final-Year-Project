@@ -56,7 +56,6 @@ def build_player_match_form_table(shots_df: pd.DataFrame, n_matches: int = 5) ->
     Returns the player_match DataFrame (one row per (playerId, matchId)) with 8 new
     columns appended. Caller merges back to shot level via (playerId, matchId).
     """
-    # Phase 1: Aggregate
     player_match = (
         shots_df.groupby(["playerId", "matchId"], as_index=False)
         .agg(
@@ -79,10 +78,8 @@ def build_player_match_form_table(shots_df: pd.DataFrame, n_matches: int = 5) ->
     assert (player_match["match_goals"] <= player_match["match_shots"]).all(), \
         "match_goals exceeds match_shots"
 
-    # Phase 2: Sort
     player_match = player_match.sort_values(PLAYER_MATCH_SORT, ignore_index=True)
 
-    # Phase 3: Rolling form
     g = player_match.groupby("playerId", group_keys=False)
 
     player_match["goals_last_5_matches"] = (
